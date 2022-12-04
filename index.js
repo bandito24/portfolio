@@ -11,29 +11,69 @@ function change2(){
 
 let background = document.body;
 let aboutMe = document.getElementById('about-me');
-var node = document.getElementById('links').querySelector('img');
+let chkMode = true;
 
 
 function lightMode(){
+    chkMode = false;
     background.style.backgroundImage='url(./images-2/white.jpg)'
     background.style.color = 'hsla(0,0%,0%,.85)';
     document.getElementById('about-me').style.border = "3px hsla(168, 76%, 36%, .75) solid";
     aboutMe.querySelector('a').style.color = 'hsla(0,0%,0%,.85)';
-   
-    //document.getElementsByClassName('color-mode').style.boxShadow = "2px 2px 2px black";
-    document.getElementById('nav').querySelector('li').style.color = 'hsla(0,0%,0%,.85)'
-    node.style.backgroundColor = 'hsla(0,0%,50%,.5)'
-    node.style.borderRadius = '5px'
+    document.getElementById('dark-mode').style.color = 'black';
+    document.getElementById('dark-mode').style.boxShadow = '1px 1px 1px black';
+    document.getElementById('light-mode').style.color = 'hsla(168, 76%, 36%, .75)';
+    document.getElementById('light-mode').style.boxShadow = '2px 2px 2px hsla(168, 76%, 36%, .75)';
+    document.getElementById('light-mode').style.fontWeight = 'bold';
+    document.getElementById('dark-mode').style.fontWeight = '400';
+
+    let links = document.querySelectorAll('.nav-links')
+    for(let i = 0; i < links.length; i++){
+        links[i].style.color = 'black';
+        links[i].style.opacity = '0.95';
+    }
+    
  /*
     for (let i = 0; i < node.clientHeight; i++){
         node[i].style.backgroundColor = 'hsla(0,0%,50%,.5)';
     };
 */
 
-
-
 }
 
+function darkMode(){
+    chkMode = true;
+    background.style.backgroundImage='url(./images-2/andrew-kliatskyi-d3YXpAqdy2I-unsplash.jpg)'
+    background.style.color = 'hsla(0,0%,95%, .9)';
+    document.getElementById('about-me').style.border = "3px hsla(0,0%,95%, .4) solid";
+    aboutMe.querySelector('a').style.color = 'hsla(0,0%,95%, .9)';
+
+    document.getElementById('dark-mode').style.color = 'hsla(168, 76%, 36%, .75)';
+    document.getElementById('dark-mode').style.boxShadow = '2px 2px 2px hsla(168, 76%, 36%, .75)';
+    document.getElementById('light-mode').style.color = 'white';
+    document.getElementById('light-mode').style.fontWeight = '400';
+    document.getElementById('dark-mode').style.fontWeight = 'bold';
+    document.getElementById('light-mode').style.boxShadow = '1px 1px 1px white';
+
+
+    let links = document.querySelectorAll('.nav-links')
+    for(let i = 0; i < links.length; i++){
+        links[i].style.color = 'white';
+        links[i].style.opacity = '0.95';
+    }
+}
+
+function highlightOn(){
+    document.getElementById('about-anchor').style.color = 'hsla(168, 76%, 36%, .75)';
+}
+
+function highlightOff(){
+    if (chkMode == false){
+    document.getElementById('about-anchor').style.color = 'hsla(0,0%,0%,.85)';
+} else {
+    document.getElementById('about-anchor').style.color = 'hsl(0,0%,95%, .9)';
+}
+}
 
 
 

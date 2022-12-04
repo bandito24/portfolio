@@ -66,21 +66,32 @@ header{
     z-index: 1;
 }
 
-.color-mode li{
+.color-mode2 li{
     cursor: pointer;
     width: 50px;
     font-size: .75rem;
-    box-shadow: 2px 2px 2px white;
+    
     border-radius: 5px;
     padding: 5px;
-    font-weight: bold;
+    
+    
 }
 
-.color-mode li:hover{
-    box-shadow: 2px 2px 1px hsla(168, 76%, 36%, .75); 
-    color: hsla(168, 76%, 36%, .75);
-    transition: box-shadow .3s linear, color .3s linear;
+#dark-mode{
+    font-weight: bold;
+    box-shadow: 2px 2px 2px white;
 }
+
+#light-mode{
+    box-shadow: 1px 1px 1px white;
+}
+
+#dark-mode{
+    color: hsla(168, 76%, 36%, .75);
+    box-shadow: 2px 2px 1px hsla(168, 76%, 36%, .75);  
+
+}
+
 
 #dark-mode{
     margin-bottom: 2em;
@@ -140,7 +151,7 @@ header{
 
 #about-me{
     text-align: center;
-    border: 3px hsl(0,0%,95%, .4) solid;
+    border: 3px hsla(0,0%,95%, .4) solid;
     border-radius: 20px;
     margin-bottom: 30px;
     padding-top: 20px;
@@ -226,7 +237,7 @@ header{
 }
 
 .contact-greet h1{
-    color: hsla(168, 76%, 36%, .60);
+    color: hsla(168, 76%, 36%, .80);
     font-size: 3rem;
     
 }
@@ -240,7 +251,7 @@ header{
 
 input{
     font-weight: bold;
-    color: hsla(168, 76%, 36%, .60);
+    color: hsla(168, 76%, 36%, .80);
     background-color: hsla(0,0%,50%, .3);
     padding-top: .5em;
     padding-bottom: .5em;

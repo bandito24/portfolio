@@ -12,10 +12,10 @@
     <header>
         <nav>
             <div id="nav">
-                <ul>
-                    <a href="#about-me"><li>About</li></a>
-                    <a href="#experience"><li>Experience</li></a>
-                    <a href="#contact"><li>Contact</li></a>
+                <ul class="navJs">
+                    <a href="#about-me" class="nav-links"><li>About</li></a>
+                    <a href="#experience" class="nav-links"><li>Experience</li></a>
+                    <a href="#contact" class="nav-links"><li>Contact</li></a>
                 </ul>
             </div>
              <div id="links">
@@ -25,8 +25,8 @@
             </div>
         </nav>
     <div class="color-mode">
-        <ul>
-            <li id="dark-mode">Dark Mode</li>
+        <ul class="color-mode2">
+            <li id="dark-mode" onclick="darkMode()">Dark Mode</li>
             <li id="light-mode" onclick="lightMode()">Light Mode</li>
         </ul>
     </div>
@@ -49,7 +49,7 @@
 
     <div id="about-me">
         <h2>About Me</h2>
-            <p>I've taken a unlikely path toward coding. After grauduating high school in 2011, I attended University of Washington, majoring in history and graduating in 2015. From 2015 to 2019 I was self-employed as a musician, finding success performing in various venues in Southern California and <a href="https://open.spotify.com/artist/1Ws6mwWrP9FmTpVoe5CxGY?si=TqODTOQzR92vW4zXLDiDqw" target="_blank">recording written music.</a>  During the COVID pandemic I began a website with my brother dedicated to native landscaping. I initally learned coding in order to help develop this website, which you can find here.</p>
+            <p>I've taken a unlikely path toward coding. After grauduating high school in 2011, I attended University of Washington, majoring in history and graduating in 2015. From 2015 to 2019 I was self-employed as a musician, finding success performing in various venues in Southern California and <a href="https://open.spotify.com/artist/1Ws6mwWrP9FmTpVoe5CxGY?si=TqODTOQzR92vW4zXLDiDqw" target="_blank" id="about-anchor" onmouseover="highlightOn()" onmouseout="highlightOff()">recording written music.</a>  During the COVID pandemic I began a website with my brother dedicated to native landscaping. I initally learned coding in order to help develop this website, which you can find here.</p>
     </div>
 
     
