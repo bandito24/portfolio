@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Mudd Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="nav">
+                <ul>
+                    <a href="#about-me"><li>About</li></a>
+                    <a href="#experience"><li>Experience</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </div>
+             <div id="links">
+                <a href="https://github.com/bandito24" target="_blank"><img src="./images-2/githubicon.png" alt="GitHub Icon"></a>
+                <a href="https://github.com/bandito24" target="_blank"><img src="./images-2/linkedin.png" alt="LinkedIn Icon"></a>
+                <a href="./index2.html" target="_blank"><img src="./images-2/instagram.png" alt="Instagram Icon"></a>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <div id="hero">
+        <div class="description">
+    <h1>Nice to meet you! My name is <span>Charlie Mudd</span></h1>
+    <h2>I'm a junior front-end developer from San Diego, California </h2>
+        </div>
+    <img src="./images-2/headshot.jpeg" alt="Profile image" id="profile-img">
+    </div>
+
+    <div id="mobile-hero">
+    <h1>Nice to meet you! My name is <span>Charlie Mudd</span></h1>
+    <img src="./images-2/headshot.jpeg" alt="Profile image" id="profile-img">
+    <h2>I'm a junior front-end developer from San Diego, California </h2>
+    </div>
+
+    <div id="about-me">
+        <h2>About Me</h2>
+            <p>I've taken a unlikely path towards coding. After grauduating high school in 2011, I attended University of Washington, majoring in history and graduating in 2015. From 2015 to 2019 I was self-employed as a musician, finding success performing in various venues in Southern California and <a href="https://open.spotify.com/artist/1Ws6mwWrP9FmTpVoe5CxGY?si=TqODTOQzR92vW4zXLDiDqw" target="_blank">recording written music.</a>  During the COVID pandemic I began a website with my brother dedicated to native landscaping. I initally learned coding in order to help develop this website, which you can find here.</p>
+    </div>
+
+    
+
+    <div id="experience">
+        <h2>Experience</h2>
+        <div id="exp-flex">
+            <div>
+                <h3>HTML</h3>
+                <h5>Nearly two whole months</h5>
+            </div>
+            <div>
+                <h3>CSS</h3>
+                <h5>Just about one month</h5>
+            </div>
+            <div>
+                <h3>Javascript</h3>
+                <h5>Almost two weeks of almost knowing JS</h5>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="contact-greet" id="contact-greet">
+            <h1>Contact</h1>
+            <p>I would love to know about any projects you're interested in and how I can help. Please fill out the form and I'll get back to you as soon as possible.</p>
+        </div>
+        <form action="./placeholder" method="POST" id="input">
+           
+                <label for="input-name" id="label-1" class="label-1">name</label>
+                <input type="text" name="input-name" id="input-name" onclick="change()">
+                <br>
+                <br>
+                <label for="email" id="label-2" class="label-2">email</label>
+                <input type="text" name="email" id="email" onclick="change2()">
+                <br>
+                <br>
+                <label for="description">Brief discription about your project</label>
+                <br>
+                <textarea name="description" id="descripton" cols="30" rows="10"></textarea>
+                <br>
+                <input type="submit" value="send message" id="submit">
+
+
+
+
+           
+        </form>
+    </div>
+
+
+    
+</main>
+
+
+
+
+
+<footer>
+    <h3 id="name">Charlie Mudd</h3>
+            <div id="links-foot">
+                <a href="https://github.com/bandito24" target="_blank"><img src="./images-2/githubicon.png" alt="GitHub Icon"></a>
+                <a href="https://github.com/bandito24" target="_blank"><img src="./images-2/linkedin.png" alt="LinkedIn Icon"></a>
+                <a href="./index2.html" target="_blank"><img src="./images-2/instagram.png" alt="Instagram Icon"></a>
+
+            </div>
+
+</footer>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
