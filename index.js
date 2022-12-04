@@ -33,11 +33,8 @@ function lightMode(){
         links[i].style.opacity = '0.95';
     }
     
- /*
-    for (let i = 0; i < node.clientHeight; i++){
-        node[i].style.backgroundColor = 'hsla(0,0%,50%,.5)';
-    };
-*/
+    document.getElementById('github').src='./images-2/github2.png'
+    document.getElementById('github2').src='./images-2/github2.png'
 
 }
 
@@ -61,6 +58,10 @@ function darkMode(){
         links[i].style.color = 'white';
         links[i].style.opacity = '0.95';
     }
+
+    document.getElementById('github').src='./images-2/githubicon.png'
+    document.getElementById('github2').src='./images-2/githubicon.png'
+
 }
 
 function highlightOn(){
