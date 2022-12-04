@@ -1,0 +1,587 @@
+/* general layout */
+
+body {
+    background-image: url(./images-2/andrew-kliatskyi-d3YXpAqdy2I-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: hsl(0,0%,95%, .9);
+    font-family: Heebo, sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+/* header */
+
+header{
+    display: inline;
+}
+
+#links img{
+    width: 30px;
+    height: 30px;
+    padding: 1em 1em 1em 1em;
+    display: inline-block;
+    position: relative;
+    bottom: 80px;
+}
+#links {
+    padding-top: 15px;
+    float: right;
+}
+
+#nav li{
+    display: inline-block;
+    padding-left: 2em;
+    padding-top: 10px;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-color: hsla(168, 76%, 36%, .90);
+    
+}
+
+
+#nav li:hover{
+    color: hsla(168, 76%, 36%, .90);
+    transition: color .4s ease-in;
+
+}
+
+#nav a{
+    color: hsl(0,0%,95%, .9);
+}
+
+#nav ul{
+    display: flex;
+    justify-content: center;
+    margin-right: 5em;
+}
+
+
+.color-mode ul{
+    position: absolute;
+    left: -40px;
+    top: 2px;
+    list-style: none;
+    z-index: 1;
+}
+
+.color-mode li{
+    cursor: pointer;
+    width: 50px;
+    font-size: .75rem;
+    box-shadow: 2px 2px 2px white;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.color-mode li:hover{
+    box-shadow: 2px 2px 1px hsla(168, 76%, 36%, .75); 
+    color: hsla(168, 76%, 36%, .75);
+    transition: box-shadow .3s linear, color .3s linear;
+}
+
+#dark-mode{
+    margin-bottom: 2em;
+}
+
+/* hero section */
+
+
+#profile-img{
+    width: 550px;
+    height: 550px;
+    border-radius: 30px;
+    opacity: 85%;
+}
+
+#hero {
+    padding-top: 3em;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.description{
+    width: 40%;
+    text-align: center;
+}
+
+
+#hero h1 {
+    font-size: 3rem;
+   
+}
+
+#hero span{
+    text-decoration: underline;
+    text-decoration-color: hsla(168, 76%, 36%, .75); 
+}
+
+#hero h2 {
+   padding-top: 1.5em;
+   font-size: 1.75rem;
+}
+
+#hero h1, #hero h2{
+    margin-right: 1em;
+}
+
+#mobile-hero{
+    display: none;
+}
+
+
+
+/* about me */
+
+#about-me{
+    text-align: center;
+    border: 3px hsl(0,0%,95%, .4) solid;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    margin-top: 150px;
+    
+}
+
+#about-me p{
+    line-height: 2.5;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+
+
+#about-me a{
+    text-decoration: underline;
+    text-decoration-color: hsla(168, 76%, 36%, .75); 
+    text-decoration-thickness: 3px;
+    color: hsl(0,0%,95%, .9);
+}
+#anchor-about:hover{
+    color: hsla(168, 76%, 36%, .90);
+    transition: color .4s ease-in;
+
+}
+
+/* experience */
+
+
+#experience{
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-bottom: 5em;
+}
+
+
+#experience h2{
+    
+    text-align: center;
+    
+}
+
+#exp-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    left: 2.7em;
+    font-size: larger;
+    
+}
+
+#exp-flex h3{
+    color: hsla(168, 76%, 36%, .90);
+}
+#exp-flex div{
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* Contact Section */
+
+
+#contact{
+    margin-top: 3em;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 5em;
+}
+
+.contact-greet{
+    width: 40%;
+    position: relative;
+    bottom: 2em;
+    text-align: center;
+    
+
+}
+
+.contact-greet h1{
+    color: hsla(168, 76%, 36%, .60);
+    font-size: 3rem;
+    
+}
+
+.contact-greet p{
+    padding-top: .5em;
+    line-height: 2;
+    font-size: 1rem;
+}
+
+
+input{
+    font-weight: bold;
+    color: hsla(168, 76%, 36%, .60);
+    background-color: hsla(0,0%,50%, .3);
+    padding-top: .5em;
+    padding-bottom: .5em;
+    
+}
+
+#input-name, #email{
+    
+    position: relative;
+    right: 3.7em;
+    
+}
+
+#input-name:hover, #email:hover, textarea:hover{
+    box-shadow: 1px 1px 1px white;
+    transition: box-shadow 400ms linear;
+}
+
+
+
+.label-1{
+    
+    z-index: 1;
+    color: hsla(168, 76%, 36%, .60);
+}
+
+.label-2{
+    z-index: 1;
+    color: hsla(168, 76%, 36%, .60);
+}
+
+label{
+    font-weight: bold;
+}
+
+#submit{
+    font-weight: bold;
+    color: hsla(168, 76%, 36%, .60);
+    font-size: 1rem;
+    padding: 1em;
+    margin-top: 1em;
+    position: relative;
+    left: 3.75em;
+    
+
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: hsla(0,0%,90%, .3);
+    transition: background-color .3s linear;
+}
+
+textarea{
+    background-color: hsla(0,0%,50%,.3);
+    font-family: heebo, sans-serif;
+    padding-right: 4.25em;
+    font-weight: bold;
+    color: hsla(168, 76%, 36%, .60);
+    letter-spacing: .5px;
+}
+
+/* for the footer links */
+
+footer{
+    display: inline;
+    
+}
+
+#links-foot{
+    display: inline;
+    float: right;
+   
+    
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    padding-right: 1em;
+    display: inline;
+    position: relative;
+    margin-bottom: 2em;
+
+}
+
+
+
+#name{
+    display: inline;
+    position:relative;
+    top: 12px;
+}
+
+
+/* MEDIA QUERIES!!!!!!!!!!!!!!!!!!!!!!! */
+@media only screen and (max-width: 1150px) {
+    #nav{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+
+
+
+    #hero{
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    #hero h1{
+        font-size: 2.5rem;
+        
+    }
+
+    #hero h2{
+        font-size: 1.5rem;
+        padding-top: .1em;
+       
+    }
+    #profile-img{
+        width: 450px;
+        height: 450px;
+    
+    }
+
+    #about-me{
+        margin-top: 75px;
+    }
+
+
+    #exp-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: initial;
+        font-size: larger;
+        
+    }
+
+    #exp-flex div{
+        width: 300px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 940px){
+    header{
+        width: 100%;
+    }
+    
+    #nav ul{
+      position: relative;
+      right: 4em;
+    }
+    
+    
+    #hero{
+        display: none;
+    }
+
+    #mobile-hero h1{
+        padding-bottom: .25em;
+    }
+
+    #mobile-hero{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+
+    #mobile-hero span{
+        text-decoration: underline;
+    text-decoration-color: hsla(168, 76%, 36%, .75); 
+    text-decoration-thickness: 4px;
+    }
+
+}
+
+@media only screen and (max-width: 840px){
+    #nav{
+        position:relative;
+        right: 0em
+    }
+    #links img{
+        position: relative;
+        left: 4em;
+    }
+    .contact-greet{
+        position: relative;
+        right: 1em;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 712px){
+    
+    
+    #profile-img{
+        width: 400px;
+        height: 400px;
+        position: relative;
+        left: 9px;
+    
+    }
+
+    #links img{
+        width: 30px;
+        height: 30px;
+        position:initial;
+        display: flex;
+        padding-left: 40px;
+        justify-content: center;
+        padding-bottom: 20px;
+        
+       
+        
+        
+       
+    }
+    #links {
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        float: none;
+        margin-left: 10px;
+        
+    }
+    
+    #nav{
+        position: initial;
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav li{
+        margin: 0;
+        padding-top: 20px;
+        font-size: 1.25rem;
+        text-decoration: underline;
+        text-decoration-color: hsla(168, 76%, 36%, .90);
+        display: flex;
+        justify-content: center;
+        
+    }
+    #nav ul{
+        padding: 0;
+        padding-left: 20px;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 1em;
+        padding-bottom: 20px;
+    }
+
+    #about-me{
+        padding: 0 10px;
+    }
+
+    #links-foot img{
+        padding-right: 2.25em;
+        float: right;
+    }
+
+    .contact-greet{
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 400px){
+
+    #nav li{
+        font-size: 1rem;
+    }
+
+
+    #profile-img{
+        width: 400px;
+        height: 400px;
+        
+    
+    }
+
+    .color-mode li{
+        padding: 5px 0 5px 5px;
+    }
+
+
+    #about-me{
+        position: relative;
+        left: 1em;
+}
+
+    #experience{
+        position: relative;
+        left: 1em;
+    }
+
+    #name{
+        display: none;
+    }
+
+    #links-foot{
+        display: flex;
+        justify-content: center;
+        position: initial;
+        float: none;
+    }
+
+    footer img{
+        width: 30px;
+        height: 30px;
+        padding-right: 3em;
+        display: inline;
+        float:none;
+        margin-bottom: 2em;
+        position: relative;
+        left: 2.5em;
+    
+    }
+    #contact{
+        position: relative;
+        left: 2em;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .color-mode{
+        display: none;
+    }
+}
