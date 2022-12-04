@@ -20,10 +20,10 @@ header{
 #links img{
     width: 30px;
     height: 30px;
-    padding-right: 1.5em;
+    padding: 1em 1em 1em 1em;
     display: inline-block;
     position: relative;
-    bottom: 65px;
+    bottom: 80px;
 }
 #links {
     padding-top: 15px;
@@ -39,7 +39,6 @@ header{
     text-decoration-color: hsla(168, 76%, 36%, .90);
     
 }
-
 
 
 #nav li:hover{
@@ -58,6 +57,34 @@ header{
     margin-right: 5em;
 }
 
+
+.color-mode ul{
+    position: absolute;
+    left: -40px;
+    top: 2px;
+    list-style: none;
+    z-index: 1;
+}
+
+.color-mode li{
+    cursor: pointer;
+    width: 50px;
+    font-size: .75rem;
+    box-shadow: 2px 2px 2px white;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.color-mode li:hover{
+    box-shadow: 2px 2px 1px hsla(168, 76%, 36%, .75); 
+    color: hsla(168, 76%, 36%, .75);
+    transition: box-shadow .3s linear, color .3s linear;
+}
+
+#dark-mode{
+    margin-bottom: 2em;
+}
 
 /* hero section */
 
@@ -317,13 +344,7 @@ footer img{
     }
 
 
-    #links img{
-        
-        padding-right: 2em;
-        display: inline-block;
-        position: relative;
-        bottom: 65px;
-    }
+
 
     #hero{
         width: 100%;
@@ -409,7 +430,7 @@ footer img{
 @media only screen and (max-width: 840px){
     #nav{
         position:relative;
-        right: 3em
+        right: 0em
     }
     #links img{
         position: relative;
@@ -467,7 +488,7 @@ footer img{
     #nav li{
         margin: 0;
         padding-top: 20px;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         text-decoration: underline;
         text-decoration-color: hsla(168, 76%, 36%, .90);
         display: flex;
@@ -516,6 +537,11 @@ footer img{
     
     }
 
+    .color-mode li{
+        padding: 5px 0 5px 5px;
+    }
+
+
     #about-me{
         position: relative;
         left: 1em;
@@ -551,5 +577,11 @@ footer img{
     #contact{
         position: relative;
         left: 2em;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .color-mode{
+        display: none;
     }
 }
