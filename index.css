@@ -285,6 +285,7 @@ footer{
 
 #links-foot{
     display: inline;
+    float: right;
    
     
 }
@@ -295,7 +296,6 @@ footer img{
     padding-right: 1em;
     display: inline;
     position: relative;
-    float:right;
     margin-bottom: 2em;
 
 }
